@@ -12,5 +12,4 @@ rake build -t -v
 cp pkg/fluent-plugin-*.gem docker
 
 # Build Docker Image
-FLUENTD_HEC_GEM_VERSION=`cat docker/FLUENTD_HEC_GEM_VERSION`
 docker build --no-cache -t splunk/k8s-metrics:$TAG ./docker
