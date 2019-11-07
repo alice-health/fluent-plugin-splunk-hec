@@ -141,6 +141,9 @@ workflows:
           requires:
             - func_test_master
             - func_test_develop
+          filters:
+            branches:
+              only: develop
   release:
     jobs:
       - build:
