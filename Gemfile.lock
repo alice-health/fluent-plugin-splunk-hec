@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    fluent-plugin-splunk-hec (1.1.1)
+    fluent-plugin-splunk-hec (1.2.0)
       fluent-plugin-kubernetes_metadata_filter (= 2.1.2)
-      fluentd (~> 1.4)
+      fluentd (= 1.4)
       multi_json (~> 1.13)
       net-http-persistent (~> 3.0)
       openid_connect (~> 1.1.6)
@@ -12,9 +12,9 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (5.2.3)
-      activesupport (= 5.2.3)
-    activesupport (5.2.3)
+    activemodel (5.2.4)
+      activesupport (= 5.2.4)
+    activesupport (5.2.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -38,7 +38,7 @@ GEM
       fluentd (>= 0.14.0, < 2)
       kubeclient (~> 1.1.4)
       lru_redux
-    fluentd (1.6.0)
+    fluentd (1.4.0)
       cool.io (>= 1.4.5, < 2.0.0)
       dig_rb (~> 1.0.0)
       http_parser.rb (>= 0.5.1, < 0.7.0)
@@ -55,16 +55,17 @@ GEM
       http-cookie (~> 1.0)
       http-form_data (~> 1.0.1)
       http_parser.rb (~> 0.6.0)
+    http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     http-form_data (1.0.3)
     http_parser.rb (0.6.0)
     httpclient (2.8.3)
-    i18n (1.6.0)
+    i18n (1.7.0)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.2)
     json (2.1.0)
-    json-jwt (1.10.2)
+    json-jwt (1.11.0)
       activesupport (>= 4.2)
       aes_key_wrap
       bindata
@@ -76,14 +77,14 @@ GEM
     lru_redux (1.1.0)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    mime-types (3.2.2)
+    mime-types (3.3)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2019.0331)
+    mime-types-data (3.2019.1009)
     mini_mime (1.0.2)
     minitest (5.11.3)
-    msgpack (1.3.0)
-    multi_json (1.13.1)
-    net-http-persistent (3.0.1)
+    msgpack (1.3.1)
+    multi_json (1.14.1)
+    net-http-persistent (3.1.0)
       connection_pool (~> 2.2)
     netrc (0.11.0)
     openid_connect (1.1.8)
@@ -106,16 +107,17 @@ GEM
     public_suffix (3.1.1)
     quantile (0.2.1)
     rack (2.0.7)
-    rack-oauth2 (1.10.0)
+    rack-oauth2 (1.10.1)
       activesupport
       attr_required
       httpclient
-      json-jwt (>= 1.9.0)
+      json-jwt (>= 1.11.0)
       rack
     rainbow (3.0.0)
     rake (12.3.2)
     recursive-open-struct (1.0.0)
-    rest-client (2.0.2)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
@@ -129,7 +131,7 @@ GEM
       unicode-display_width (~> 1.4.0)
     ruby-progressbar (1.10.0)
     safe_yaml (1.0.5)
-    serverengine (2.1.1)
+    serverengine (2.2.0)
       sigdump (~> 0.2.2)
     sigdump (0.2.4)
     simplecov (0.16.1)
@@ -147,7 +149,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2019.2)
+    tzinfo-data (1.2019.3)
       tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
@@ -182,4 +184,4 @@ DEPENDENCIES
   webmock (~> 3.5.0)
 
 BUNDLED WITH
-   2.0.1
+   2.1.0
