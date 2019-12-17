@@ -2,8 +2,9 @@ PATH
   remote: .
   specs:
     fluent-plugin-splunk-hec (1.2.0)
+      activesupport (~> 5.2)
       fluent-plugin-kubernetes_metadata_filter (= 2.1.2)
-      fluentd (= 1.4)
+      fluentd (= 1.5)
       multi_json (~> 1.13)
       net-http-persistent (~> 3.0)
       openid_connect (~> 1.1.6)
@@ -38,7 +39,7 @@ GEM
       fluentd (>= 0.14.0, < 2)
       kubeclient (~> 1.1.4)
       lru_redux
-    fluentd (1.4.0)
+    fluentd (1.5.0)
       cool.io (>= 1.4.5, < 2.0.0)
       dig_rb (~> 1.0.0)
       http_parser.rb (>= 0.5.1, < 0.7.0)
