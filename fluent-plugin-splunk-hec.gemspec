@@ -37,7 +37,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'fluentd', '= 1.4'
   spec.add_runtime_dependency 'multi_json', '~> 1.13'
   spec.add_runtime_dependency 'net-http-persistent', '~> 3.0'
-  spec.add_runtime_dependency 'openid_connect', '~> 1.1.6'
+  spec.add_runtime_dependency 'openid_connect', '= 1.1.6'
   spec.add_runtime_dependency 'prometheus-client', '~> 0.9.0'
 
   spec.add_development_dependency 'bundler', '~> 2.0'
